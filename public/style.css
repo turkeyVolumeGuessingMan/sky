@@ -1,0 +1,232 @@
+
+
+:root {
+  font-family: Georgia, Palatino, Baskerville, Cambria, Cochin, Garamond, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  margin-left: 8vw;
+  margin-right: 8vw;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #12232E;
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+@supports (font-size-adjust: 1) {
+  article {
+    font-size-adjust: 0.5;
+  }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 1024px) {
+
+  div.topRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    line-height: 1.5em;
+    width: 100vw;
+    max-width: 60em;
+    min-height: 90vh;
+  }
+
+  button {
+    width: 100%;
+  }
+
+
+  .inputString {
+    width: 100%;
+    font-size: large;
+  }
+
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+
+  div.topRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    line-height: 1.5em;
+    width: 100vw;
+    max-width: 60ch;
+    min-height: 90vh;
+  }
+
+  .inputString {
+    width: 60ch;
+    font-size: x-large;
+  }
+
+}
+
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+
+.inputForm {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+.inputString {
+  font-family: 'EB Garamond', Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.inputLabel {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+p {
+  text-indent: 1em;
+  text-align: left;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+h1 {
+  text-indent: 0;
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+
+h2 {
+  text-indent: 0;
+  font-size: 2.2em;
+  line-height: 1.1;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+
+h3 {
+  text-indent: 0;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  line-height: 1.1;
+}
+
+
+.headline {
+  text-indent: 0;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: bold;
+  color: wheat;
+  font-family: 'Special Elite', cursive;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+#page {
+  border-radius: 2em;
+  padding: 1.0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#btns {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+button {
+  border-radius: 0.25em;
+  border: 1px solid transparent;
+  padding: 0.6em;
+  margin: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #203647;
+  cursor: pointer;
+  display: flex;
+  text-indent: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.buttonText {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+  color: white;
+  text-shadow: 0px 0px 2px white;
+  text-indent: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
