@@ -3,6 +3,6 @@ You walk north.
 
 Then east. ? (spring wine) => { You have the spring wine. } Then you go west.
 
-> Walk into the storm @stormBegins
+>> @stormBegins
 
-> Read book @start/readBook
+>> Read book @start/readBook

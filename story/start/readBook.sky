@@ -4,7 +4,11 @@ You read a book.
 
 #spring wine
 
+(clam|hat|paper|toast)
 
-> Read blue @blue
 
-> Go North @northWalk
+>> Read blue @blue
+
+>> Read me @start
+
+>> Go North @northWalk

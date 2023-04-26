@@ -33,27 +33,30 @@ const symbolicNotationCheck = (str) => {
             }
             matches = [...str.matchAll(nc)]
         }
+
+        str = punchText(str)
+        str = incrementPrintScan(str)
         
         const lines = str.split(/\r?\n/)
         str = lines.map(line => {
             if (line[0] === '#') {
                 let b = true
-                let v = line.trim();
+                let v = line.trim()
                 v = v.replace('#', '')
                 if (v.indexOf("!") > -1) {
-                    b = false;
-                    v = v.replace("!", "");
+                    b = false
+                    v = v.replace("!", "")
                 }
-                const hash = stringToHash(v);
+                const hash = stringToHash(v)
                 g$[hash] = b;
                 return ''
             } else if (line[0] === '$') {
-                let v = line.trim();
+                let v = line.trim()
                 v = v.replace('$', '')
                 v = v.split('/')
                 const state = v.pop()
-                const dir = `${v.join('/')}-state`.toLowerCase();
-                g$[dir] = state;
+                const dir = `${v.join('/')}-state`.toLowerCase()
+                g$[dir] = state
                 return ''
             }
             return line
