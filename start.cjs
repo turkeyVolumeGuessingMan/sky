@@ -91,7 +91,7 @@ const buildCodeTree = async () => {
 }
 
 
-chokidar.watch(["./story", "./engine"]).on("all", (event, path) => {
+chokidar.watch(["./story"]).on("all", (event, path) => {
   buildCodeTree()
 })
 buildCodeTree()

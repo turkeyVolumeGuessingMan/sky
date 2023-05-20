@@ -6,3 +6,8 @@ Hello world *again*
 > Go North @northWalk
 
 >> Read Book @readBook
+
+_ Type verb here
+blag @quick
+foo|bar @readBook
+* @defaultResponse

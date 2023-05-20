@@ -4,7 +4,8 @@ You read a book.
 
 #spring wine
 
-(clam|hat|paper|toast)
+It appears to be about (clams|hats|paper|toast).
+
 
 
 >> Read blue @blue

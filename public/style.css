@@ -96,7 +96,9 @@ q {
 }
 
 .inputLabel {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: medium;
 }
 
 
